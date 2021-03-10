@@ -30,7 +30,7 @@ export default function SpiceCookies(){
                         <hr />
 
                         <Grid container spacing={2} alignItems="center">
-                            <Grid container item xs="6"> <BakeMakes /></Grid>
+                            <Grid container item xs={6}> <BakeMakes /></Grid>
                             <Grid container item xs justify="space-around">
                                 <Grid item> <Button size="small" variant="outlined">SAVE RECIPE</Button> </Grid>
                                 <Grid item> <Button size="small" variant="outlined">PRINT</Button> </Grid>
