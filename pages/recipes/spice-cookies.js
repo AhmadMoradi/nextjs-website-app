@@ -3,7 +3,9 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
+
 import RecipeImage from "../../components/recipe/RecipeImage";
+import BakeDuration from "../../components/recipe/BakeDuration";
 
 export default function SpiceCookies(){
     return (
@@ -20,6 +22,8 @@ export default function SpiceCookies(){
                                 This blueberry buckle recipe came from my grandmother. As children, my sister and I remember going to Pennsylvania for blueberry picking. Mother taught us to pick only perfect berries, and those gems went into this wonderful recipe. —Carol Dolan Mt. Laurel, New Jersey
                             </Typography>
                         </Box>
+
+                        <BakeDuration />
 
                         <hr />
                     </Grid>
