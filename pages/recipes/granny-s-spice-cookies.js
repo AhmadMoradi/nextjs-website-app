@@ -25,6 +25,10 @@ const  recipe = {
 }
 
 export default function GrannySSpiceCookies(){
+    const print = () => {
+        window.print();
+    }
+
     return (
         <>
             <Head>
@@ -51,8 +55,14 @@ export default function GrannySSpiceCookies(){
                             <Grid container spacing={2} alignItems="center">
                                 <Grid container item xs={6}> <BakeMakes makes={recipe.makes} /></Grid>
                                 <Grid container item xs justify="space-around">
-                                    <Grid item> <Button size="small" variant="outlined">SAVE RECIPE</Button> </Grid>
-                                    <Grid item> <Button size="small" variant="outlined">PRINT</Button> </Grid>
+                                    <Grid item> <Button
+                                        size="small"
+                                        variant="outlined">SAVE RECIPE</Button> </Grid>
+
+                                    <Grid item> <Button
+                                        onClick={print}
+                                        size="small"
+                                        variant="outlined">PRINT</Button> </Grid>
                                 </Grid>
                             </Grid>
                         </Grid>
