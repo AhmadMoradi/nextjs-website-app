@@ -3,9 +3,11 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
+import Button from '@material-ui/core/Button';
 
 import RecipeImage from "../../components/recipe/RecipeImage";
 import BakeDuration from "../../components/recipe/BakeDuration";
+import BakeMakes from '../../components/recipe/BakeMakes';
 
 export default function SpiceCookies(){
     return (
@@ -26,6 +28,14 @@ export default function SpiceCookies(){
                         <BakeDuration />
 
                         <hr />
+
+                        <Grid container spacing={2} alignItems="center">
+                            <Grid container item xs="6"> <BakeMakes /></Grid>
+                            <Grid container item xs justify="space-around">
+                                <Grid item> <Button size="small" variant="outlined">SAVE RECIPE</Button> </Grid>
+                                <Grid item> <Button size="small" variant="outlined">PRINT</Button> </Grid>
+                            </Grid>
+                        </Grid>
                     </Grid>
 
                     <Grid item md={6}>
