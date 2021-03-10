@@ -19,7 +19,7 @@ export default function HeaderBottom(props) {
     return (
         <Box py={1} {...props}>
             <Typography className={classes.root}>
-                <Link href="/recipes/spice-cookies" variant="body2" color="inherit">Spice Cookies</Link>
+                <Link href="/recipes/granny-s-spice-cookies" variant="body2" color="inherit">Spice Cookies</Link>
             </Typography>
         </Box>
     );

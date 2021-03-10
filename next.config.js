@@ -3,7 +3,7 @@ module.exports = {
         return [
             {
                 source: '/',
-                destination: '/recipes/spice-cookies',
+                destination: '/recipes/granny-s-spice-cookies',
                 permanent: true,
             },
         ]

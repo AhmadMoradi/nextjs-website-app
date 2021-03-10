@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function BakeDuration() {
+export default function BakeDuration({duration}) {
     const classes = useStyles();
     return (
         <Grid
@@ -23,21 +23,21 @@ export default function BakeDuration() {
             <Grid item >
                 <Box>
                     <Typography variant="caption">PREP</Typography>
-                    <Typography variant="subtitle1">10 mins</Typography>
+                    <Typography variant="subtitle1">{duration.prep}</Typography>
                 </Box>
             </Grid>
 
             <Grid item>
                 <Box>
                     <Typography variant="caption">BAKE</Typography>
-                    <Typography variant="subtitle1">1 hr</Typography>
+                    <Typography variant="subtitle1">{duration.bake}</Typography>
                 </Box>
             </Grid>
 
             <Grid item>
                 <Box>
                     <Typography variant="caption">TOTAL</Typography>
-                    <Typography variant="subtitle1">1 hr 10 min</Typography>
+                    <Typography variant="subtitle1">{duration.total}</Typography>
                 </Box>
 
             </Grid>

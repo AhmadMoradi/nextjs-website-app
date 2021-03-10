@@ -9,23 +9,34 @@ import RecipeImage from "../../components/recipe/RecipeImage";
 import BakeDuration from "../../components/recipe/BakeDuration";
 import BakeMakes from '../../components/recipe/BakeMakes';
 
-export default function SpiceCookies(){
+
+const  recipe = {
+    title: `Granny’s Spice Cookies`,
+    body: `This blueberry buckle recipe came from my grandmother. As children, my sister and I remember going to Pennsylvania for blueberry picking. Mother taught us to pick only perfect berries, and those gems went into this wonderful recipe. —Carol Dolan Mt. Laurel, New Jersey`,
+    duration: {
+        prep: '10 min',
+        bake: '1 hr',
+        total: '1 hr 10 min'
+    }
+}
+
+export default function GrannySSpiceCookies(){
     return (
         <RecipeLayout>
             <Container maxWidth="lg">
                 <Grid container spacing={3}>
                     <Grid item md={6}>
                         <Box mb={6}>
-                            <Typography variant="h3" component="h1">Granny’s Spice Cookies</Typography>
+                            <Typography variant="h3" component="h1">{recipe.title}</Typography>
                         </Box>
 
                         <Box mb={2}>
                             <Typography variant="body1" component="p">
-                                This blueberry buckle recipe came from my grandmother. As children, my sister and I remember going to Pennsylvania for blueberry picking. Mother taught us to pick only perfect berries, and those gems went into this wonderful recipe. —Carol Dolan Mt. Laurel, New Jersey
+                                {recipe.body}
                             </Typography>
                         </Box>
 
-                        <BakeDuration />
+                        <BakeDuration duration={recipe.duration} />
 
                         <hr />
 
