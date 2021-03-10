@@ -17,7 +17,8 @@ const  recipe = {
         prep: '10 min',
         bake: '1 hr',
         total: '1 hr 10 min'
-    }
+    },
+    makes: `4 dozen`
 }
 
 export default function GrannySSpiceCookies(){
@@ -41,7 +42,7 @@ export default function GrannySSpiceCookies(){
                         <hr />
 
                         <Grid container spacing={2} alignItems="center">
-                            <Grid container item xs={6}> <BakeMakes /></Grid>
+                            <Grid container item xs={6}> <BakeMakes makes={recipe.makes} /></Grid>
                             <Grid container item xs justify="space-around">
                                 <Grid item> <Button size="small" variant="outlined">SAVE RECIPE</Button> </Grid>
                                 <Grid item> <Button size="small" variant="outlined">PRINT</Button> </Grid>
