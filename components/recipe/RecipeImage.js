@@ -11,11 +11,11 @@ const useStyles = makeStyles({
     },
 });
 
-export default function RecipeImage() {
+export default function RecipeImage({src}) {
     const classes = useStyles();
     return (
         <div className={classes.root}>
-            <img src="/images/recipes/spice-cookies.jpg" />
+            <img src={src} />
         </div>
     );
 }

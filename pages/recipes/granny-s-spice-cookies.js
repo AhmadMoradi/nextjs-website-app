@@ -18,7 +18,8 @@ const  recipe = {
         bake: '1 hr',
         total: '1 hr 10 min'
     },
-    makes: `4 dozen`
+    makes: '4 dozen',
+    src: '/images/recipes/spice-cookies.jpg'
 }
 
 export default function GrannySSpiceCookies(){
@@ -51,7 +52,7 @@ export default function GrannySSpiceCookies(){
                     </Grid>
 
                     <Grid item md={6}>
-                        <RecipeImage />
+                        <RecipeImage src={recipe.src} />
                     </Grid>
                 </Grid>
             </Container>
