@@ -33,7 +33,7 @@ export default function Breadcrumb() {
                     <Link color="inherit" href="#" >
                         RECIPES
                     </Link>
-                    <Typography color="textPrimary" className={classes.test}></Typography>
+                    <Typography color="textPrimary" className={classes.test}>{` `}</Typography>
                 </Breadcrumbs>
             </Box>
         </Container>
