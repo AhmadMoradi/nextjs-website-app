@@ -4,26 +4,26 @@ import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import Button from '@material-ui/core/Button';
-import Head from 'next/head';
 
 import RecipeImage from "../../components/recipe/RecipeImage";
 import BakeDuration from "../../components/recipe/BakeDuration";
 import BakeMakes from '../../components/recipe/BakeMakes';
+import Head from "next/head";
 
 
-const  recipe = {
-    title: `Granny’s Spice Cookies`,
-    body: `This blueberry buckle recipe came from my grandmother. As children, my sister and I remember going to Pennsylvania for blueberry picking. Mother taught us to pick only perfect berries, and those gems went into this wonderful recipe. —Carol Dolan Mt. Laurel, New Jersey`,
+const recipe = {
+    title: `Blackberry-Orange Cake`,
+    body: `My grandmother made luscious fruit pies and cobblers using blackberries from her garden. I decided to follow her lead and create a blackberry cake that's always lovely with a summer meal. —Lisa M. Varner, El Paso, Texas`,
     duration: {
-        prep: '10 min',
-        bake: '1 hr',
-        total: '1 hr 10 min'
+        prep: '20 min',
+        bake: '40 min',
+        total: '1 hr'
     },
-    makes: '4 dozen',
-    src: '/images/recipes/spice-cookies.jpg'
+    makes: '10 servings',
+    src: '/images/recipes/blackberry-orange-cake.jpg'
 }
 
-export default function GrannySSpiceCookies(){
+export default function ContestWinningChocolatePotatoCake() {
     return (
         <>
             <Head>
@@ -43,12 +43,12 @@ export default function GrannySSpiceCookies(){
                                 </Typography>
                             </Box>
 
-                            <BakeDuration duration={recipe.duration} />
+                            <BakeDuration duration={recipe.duration}/>
 
-                            <hr />
+                            <hr/>
 
                             <Grid container spacing={2} alignItems="center">
-                                <Grid container item xs={6}> <BakeMakes makes={recipe.makes} /></Grid>
+                                <Grid container item xs={6}> <BakeMakes makes={recipe.makes}/></Grid>
                                 <Grid container item xs justify="space-around">
                                     <Grid item> <Button size="small" variant="outlined">SAVE RECIPE</Button> </Grid>
                                     <Grid item> <Button size="small" variant="outlined">PRINT</Button> </Grid>
@@ -57,7 +57,7 @@ export default function GrannySSpiceCookies(){
                         </Grid>
 
                         <Grid item md={6}>
-                            <RecipeImage src={recipe.src} />
+                            <RecipeImage src={recipe.src}/>
                         </Grid>
                     </Grid>
                 </Container>
