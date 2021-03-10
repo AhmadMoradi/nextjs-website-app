@@ -3,6 +3,7 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
+import RecipeImage from "../../components/recipe/RecipeImage";
 
 export default function SpiceCookies(){
     return (
@@ -21,6 +22,10 @@ export default function SpiceCookies(){
                         </Box>
 
                         <hr />
+                    </Grid>
+
+                    <Grid item md={6}>
+                        <RecipeImage />
                     </Grid>
                 </Grid>
             </Container>
