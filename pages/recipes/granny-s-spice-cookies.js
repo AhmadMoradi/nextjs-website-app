@@ -12,6 +12,7 @@ import BakeMakes from '../../components/recipe/BakeMakes';
 
 
 const  recipe = {
+    id: 'snay65tgm0k',
     title: `Granny’s Spice Cookies`,
     body: `This blueberry buckle recipe came from my grandmother. As children, my sister and I remember going to Pennsylvania for blueberry picking. Mother taught us to pick only perfect berries, and those gems went into this wonderful recipe. —Carol Dolan Mt. Laurel, New Jersey`,
     duration: {
@@ -29,7 +30,7 @@ export default function GrannySSpiceCookies(){
             <Head>
                 <title>{recipe.title}</title>
             </Head>
-            <RecipeLayout>
+            <RecipeLayout recipe={recipe}>
                 <Container maxWidth="lg">
                     <Grid container spacing={3}>
                         <Grid item md={6}>

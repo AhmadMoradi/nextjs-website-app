@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-export default function Breadcrumb() {
+export default function Breadcrumb({recipe}) {
     const classes = useStyles();
 
     return (
@@ -30,10 +30,10 @@ export default function Breadcrumb() {
                     aria-label="breadcrumb"
                     className={classes.test}
                 >
-                    <Link color="inherit" href="#" >
+                    <Link color="inherit" href="/recipes" >
                         RECIPES
                     </Link>
-                    <Typography color="textPrimary" className={classes.test}>{` `}</Typography>
+                    <Typography color="textPrimary" className={classes.test}>{recipe.title.toUpperCase()}</Typography>
                 </Breadcrumbs>
             </Box>
         </Container>

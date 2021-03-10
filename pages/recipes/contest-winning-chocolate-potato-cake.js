@@ -12,6 +12,7 @@ import Head from "next/head";
 
 
 const recipe = {
+    id: 'p03xr7xde5',
     title: `Contest-Winning Chocolate Potato Cake`,
     body: `I won grand champion honors in a potato festival baking contest with this moist chocolate cake. The icing recipe can be doubled for real sweet tooths. A great-grandma, I’ve spent over 85 years on the farm.`,
     duration: {
@@ -29,7 +30,7 @@ export default function ContestWinningChocolatePotatoCake() {
             <Head>
                 <title>{recipe.title}</title>
             </Head>
-            <RecipeLayout>
+            <RecipeLayout recipe={recipe}>
                 <Container maxWidth="lg">
                     <Grid container spacing={3}>
                         <Grid item md={6}>

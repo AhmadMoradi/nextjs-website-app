@@ -6,6 +6,11 @@ module.exports = {
                 destination: '/recipes/granny-s-spice-cookies',
                 permanent: true,
             },
+            {
+                source: '/recipes',
+                destination: '/recipes/granny-s-spice-cookies',
+                permanent: true,
+            },
         ]
     },
 }

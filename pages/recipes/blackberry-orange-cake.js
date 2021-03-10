@@ -12,6 +12,7 @@ import Head from "next/head";
 
 
 const recipe = {
+    id: 'a57k15or3sc',
     title: `Blackberry-Orange Cake`,
     body: `My grandmother made luscious fruit pies and cobblers using blackberries from her garden. I decided to follow her lead and create a blackberry cake that's always lovely with a summer meal. —Lisa M. Varner, El Paso, Texas`,
     duration: {
@@ -29,7 +30,7 @@ export default function ContestWinningChocolatePotatoCake() {
             <Head>
                 <title>{recipe.title}</title>
             </Head>
-            <RecipeLayout>
+            <RecipeLayout recipe={recipe}>
                 <Container maxWidth="lg">
                     <Grid container spacing={3}>
                         <Grid item md={6}>

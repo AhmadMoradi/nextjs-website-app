@@ -20,7 +20,7 @@ const useStyle = makeStyles({
     }
 });
 
-export default function Header() {
+export default function Header({recipe}) {
     const classes = useStyle();
 
     return (
@@ -34,7 +34,7 @@ export default function Header() {
 
             <div className={classes.headerBottom}>
                 <Container>
-                    <HeaderBottom className={classes.leftSpaced} />
+                    <HeaderBottom className={classes.leftSpaced} recipe={recipe} />
                 </Container>
             </div>
         </header>
